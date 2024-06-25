@@ -19,7 +19,7 @@ const Sidebar = () => {
             <Link
               href={element.imgUrl}
               key={index}
-              className={cn("bg-black p-4 text-white  rounded-md", {
+              className={cn("bg-black p-4 text-white rounded-md", {
                 "bg-blue-600": isCurrent,
               })}
             >

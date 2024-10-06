@@ -1,28 +1,28 @@
 const sidebarElements = [
     {
-        label: 'SidebarElement1',
+        label: '🏠 Home',
         imgUrl: '',
         route: '/',
     },
     {
-        label: 'SidebarElement2',
+        label: '✨ Upcoming',
         imgUrl: '',
-        route: '/',
+        route: '/upcoming',
     },
     {
-        label: 'SidebarElement3',
+        label: '⏮️ Previous',
         imgUrl: '',
-        route: '/',
+        route: '/previous',
     },
     {
-        label: 'SidebarElement4',
+        label: '🎥Recordings',
         imgUrl: '',
-        route: '/',
+        route: '/recordings',
     },
     {
-        label: 'SidebarElement5',
+        label: '🤵Personal Room',
         imgUrl: '',
-        route: '/',
+        route: '/personal-room',
     }
 ]
 

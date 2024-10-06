@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import sidebarElements from "@/constants";
@@ -9,18 +9,17 @@ import { cn } from "@/lib/utils";
 const Sidebar = () => {
   const currElement = usePathname();
   return (
-    <section className="sticky left-0 top-0 w-fit min-h-screen bg-blue-400">
-      <div className="flex flex-col md:gap-y-6 justify-around items-center p-4">
+    <section className="sticky left-0 top-0 min-h-screen bg-neutral-800 w-fit flex-col justify-between p-6 pt-28 max-sm:hidden lg:w-[264px]">
+      <div className="flex flex-col gap-6 ">
         {sidebarElements.map((element, index) => {
           const isCurrent =
-            element.route === currElement ||
-            currElement.startsWith(element.route);
+            element.route === currElement
           return (
             <Link
-              href={element.imgUrl}
+              href={element.route}
               key={index}
-              className={cn("bg-black p-4 text-white rounded-md", {
-                "bg-blue-600": isCurrent,
+              className={cn("p-4 text-white rounded-md text-center", {
+                "bg-orange-600": isCurrent,
               })}
             >
               {element.label}
